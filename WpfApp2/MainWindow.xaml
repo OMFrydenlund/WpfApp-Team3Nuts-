@@ -7,9 +7,11 @@
         mc:Ignorable="d"
         Title="Volume Control" Height="200" Width="400">
     <Grid>
-        <Slider Name="VolumeSlider"  Minimum="0" Maximum="100" Value="50" 
-            LargeChange="10" SmallChange="1" TickFrequency="1" VerticalAlignment="Center" Width="300" ValueChanged="VolumeSlider_ValueChanged" Margin="50,0,50,0" />
-        <TextBlock Name="VolumeTextBlock" VerticalAlignment="Top" HorizontalAlignment="Center" 
+        <Slider Name="VolumeSlider" Minimum="0" Maximum="100" 
+            LargeChange="10" SmallChange="1" TickFrequency="1" VerticalAlignment="Center" 
+            Width="300" MouseMove="MouseOverMove" ValueChanged="VolumeSlider_ValueChanged" 
+            Margin="50,0,50,0" />
+        <TextBlock x:Name="VolumeTextBlock" VerticalAlignment="Top" HorizontalAlignment="Center" Text="Volume"
                FontSize="24" Margin="0,10,0,0" />
     </Grid>
 </Window>
